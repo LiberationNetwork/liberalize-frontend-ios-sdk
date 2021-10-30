@@ -1,0 +1,11 @@
+use_frameworks!
+
+platform :ios, '12.0'
+
+target 'Liberalize-iOS_Example' do
+  pod 'Liberalize-Frontend-iOS-SDK', :path => '../'
+
+  target 'Liberalize-iOS_Tests' do
+    inherit! :search_paths
+  end
+end

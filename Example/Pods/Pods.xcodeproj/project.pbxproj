@@ -1,0 +1,982 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		051A34BD17542389BF00666C3DABF0EA /* PaymentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769BA54534319DF2B89B926F70A12857 /* PaymentResponse.swift */; };
+		0D3133B167ABF2B391B014B0550A2C8F /* CardInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1157411795AA6DDBA20437418244B21B /* CardInputField.swift */; };
+		1E6146344E93D3410D8311AC1DC332D4 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC55F03477AAFA1F4EE948F9ABA67A6 /* View.swift */; };
+		254C8A2CCA2AAFB68F7161A8A76F702E /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2DF7A13525ECE8C0A7C3211397A262 /* Card.swift */; };
+		2C2EFBD4D08FD3F891853D7CE549C391 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EE58CE988F10DBCD6C3902DB853E42 /* ViewController.swift */; };
+		3AB4165495B121ED82613A68191F2F3A /* Liberalize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EB7F2920C67FA37E41BB10D80CAFB4 /* Liberalize.swift */; };
+		3CD7C71C5F4705183F62D9350DC54FBD /* ApiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499A782F1C2AF980F35554DA520A8469 /* ApiProvider.swift */; };
+		3F4B8929CB6BDA2A7151432BF14C8A60 /* Liberalize-Frontend-iOS-SDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8215A5D801C5730EEF573F9E85AF7E2D /* Liberalize-Frontend-iOS-SDK-dummy.m */; };
+		44D4EB76F773978A8F32AA9D113C91D6 /* Pods-Liberalize-iOS_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1254FAFD851337893F07DECB755AC1A8 /* Pods-Liberalize-iOS_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47D447CFC1FAA03AF0D6BD25F0D6CF22 /* Pods-Liberalize-iOS_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9EA0071B02F1F4CD27299E94CA74C7 /* Pods-Liberalize-iOS_Example-dummy.m */; };
+		4D870B438F000491B6600A14F5E063EB /* Pods-Liberalize-iOS_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3791AE4988C3F82DC63788E412825CB2 /* Pods-Liberalize-iOS_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5084D58AED59EB9F4F2EE7BCD6CAD7C5 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1465EA40107652B6E0B367F7BAB35D0 /* UIColorExtension.swift */; };
+		696EA440ADA8FBD8B7102553D7433111 /* ExpirationDateField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCFFCA6735775DD9001F7E8A9B726A5 /* ExpirationDateField.swift */; };
+		746F49B220110158FA0E14E9D2CD3899 /* PaymentMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBA729B137E851A0C99DC49304CB372 /* PaymentMethod.swift */; };
+		775BD848A61C40F03989205876A591D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		7C1566435A1474A80A0E100E53F4A892 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		7F36F8A4DC29AFB017F30A0D2BF92EDE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		81218B4A314E9A296FED250829DDB899 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C7D1007218EDF8F813E23B487E7DC5 /* ViewModel.swift */; };
+		8AC42664E7F77C82A36B0DF69C97F163 /* CardInputVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC273AC1EAC59D6FD791F62B15703F4 /* CardInputVM.swift */; };
+		957D3CCCA877BAE5CC41565BA9DE958D /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B15FED2375FF527762346004F16293A /* AuthManager.swift */; };
+		9CFA3E3B77A31CC3878AA2ED3F23B3F9 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653E00A5DCBE3D742BB7FA69CF2B26DF /* StringExtension.swift */; };
+		A77B4357893B15B96B6594F1EAC1D408 /* CodableUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB280AC01AE46D97B3F14C9E3468B48 /* CodableUtils.swift */; };
+		AE2A9DE041FB5F41BBBA386111C7C8FC /* Liberalize-Frontend-iOS-SDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 516FDDF61DA79A9ED7EB20B7555E52A3 /* Liberalize-Frontend-iOS-SDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B1185AC7559E6404EE2745021A8D8A55 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B02F3BE3BFCEBAEB250DBE17853F42 /* Constants.swift */; };
+		C00AE7D35AFA361E1F7BCAE4A7BBD173 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567B5549C4AF538195C4AE98B5382835 /* UIImageViewExtension.swift */; };
+		C418249AEDAA7643A427FB30B338CE20 /* QRCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B083643E07A3695C35C65E610F700F85 /* QRCodeView.swift */; };
+		C4854C2C55749B43C10F67047B1A7F31 /* HTTPRequestProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2BC054AAA2FA9057D6869B131711AE /* HTTPRequestProvider.swift */; };
+		C7A650002AEBBE1055E1EE9F53DBD2F6 /* Pods-Liberalize-iOS_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9279F22C5EFCFFE195E3E2900BF17603 /* Pods-Liberalize-iOS_Tests-dummy.m */; };
+		D9B4986EC9142DE0A78716FF5FC399C2 /* CardSecurityField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8477306A175E821CEFB341FD4C41D0 /* CardSecurityField.swift */; };
+		E6D54497F21C54795AD0E999D31B3362 /* PayWithOCBCButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3076B65BB89AD9184B522F501A10FE30 /* PayWithOCBCButton.swift */; };
+		F2D8DBBCDF94061EAD0DC492595D8545 /* CardUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9BFC0AA6E20BEAF26E60D31B8B5F64 /* CardUtils.swift */; };
+		F463F8F3353DB037485A2F943FBF5E6F /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE7614AB91963FE2655C25CE122926F /* UITextFieldExtension.swift */; };
+		FF9FC3C22028FF67FD8D0DF8423EFC73 /* CardInputVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745E5D809D2B48C0004F607582CB0051 /* CardInputVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D599500FAACFD836CAD514BD48151382 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C9D515D758016BDD951E9E746254CA2;
+			remoteInfo = "Liberalize-Frontend-iOS-SDK";
+		};
+		F9045CC8012E26B835E1F6C9BC0E8C11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70A8F6A92782E3EEE33FF8ED3A0813C3;
+			remoteInfo = "Pods-Liberalize-iOS_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B2DF7A13525ECE8C0A7C3211397A262 /* Card.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		0F9BFC0AA6E20BEAF26E60D31B8B5F64 /* CardUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CardUtils.swift; sourceTree = "<group>"; };
+		1157411795AA6DDBA20437418244B21B /* CardInputField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CardInputField.swift; sourceTree = "<group>"; };
+		1254FAFD851337893F07DECB755AC1A8 /* Pods-Liberalize-iOS_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Liberalize-iOS_Tests-umbrella.h"; sourceTree = "<group>"; };
+		13ECBD7478BA390391717E5CDDFA04C6 /* Pods-Liberalize-iOS_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Liberalize-iOS_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		15EE58CE988F10DBCD6C3902DB853E42 /* ViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		174188C60D07F30678E20C68479D237B /* Liberalize-Frontend-iOS-SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Liberalize-Frontend-iOS-SDK.release.xcconfig"; sourceTree = "<group>"; };
+		183B94108671E8427E4C9FCAAB9C459B /* Pods-Liberalize-iOS_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Liberalize-iOS_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1ACD83F523ED29664044B5293C36D425 /* Pods-Liberalize-iOS_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Liberalize-iOS_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		221B9237E5E576AFD31E90199D9A6F4B /* Pods-Liberalize-iOS_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Liberalize-iOS_Example-Info.plist"; sourceTree = "<group>"; };
+		2290F1CDFD275AA94FC1B4E78F65B5DB /* Pods-Liberalize-iOS_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Liberalize-iOS_Tests-Info.plist"; sourceTree = "<group>"; };
+		3076B65BB89AD9184B522F501A10FE30 /* PayWithOCBCButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PayWithOCBCButton.swift; sourceTree = "<group>"; };
+		3791AE4988C3F82DC63788E412825CB2 /* Pods-Liberalize-iOS_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Liberalize-iOS_Example-umbrella.h"; sourceTree = "<group>"; };
+		3B15FED2375FF527762346004F16293A /* AuthManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		417AC79F3342FD4AE49713DB319AC480 /* Pods-Liberalize-iOS_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Liberalize-iOS_Tests.modulemap"; sourceTree = "<group>"; };
+		438B17B27A7C29D8A4C06AE7A8B84FFB /* Pods-Liberalize-iOS_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Liberalize-iOS_Example"; path = Pods_Liberalize_iOS_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		499A782F1C2AF980F35554DA520A8469 /* ApiProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ApiProvider.swift; sourceTree = "<group>"; };
+		4D2BC054AAA2FA9057D6869B131711AE /* HTTPRequestProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HTTPRequestProvider.swift; sourceTree = "<group>"; };
+		4E0474201FB823AF045EB8DAC3242EDC /* Pods-Liberalize-iOS_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Liberalize-iOS_Example-frameworks.sh"; sourceTree = "<group>"; };
+		4EE7614AB91963FE2655C25CE122926F /* UITextFieldExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
+		516FDDF61DA79A9ED7EB20B7555E52A3 /* Liberalize-Frontend-iOS-SDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Liberalize-Frontend-iOS-SDK-umbrella.h"; sourceTree = "<group>"; };
+		55DE74C61B797F289B8E8925E5F392C8 /* Pods-Liberalize-iOS_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Liberalize-iOS_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		567B5549C4AF538195C4AE98B5382835 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		59C490F02F62A7507DF5EBE701C7A1F6 /* Liberalize-Frontend-iOS-SDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Liberalize-Frontend-iOS-SDK-prefix.pch"; sourceTree = "<group>"; };
+		5FB280AC01AE46D97B3F14C9E3468B48 /* CodableUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CodableUtils.swift; sourceTree = "<group>"; };
+		653E00A5DCBE3D742BB7FA69CF2B26DF /* StringExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		68B02F3BE3BFCEBAEB250DBE17853F42 /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6B216591A51C662219DBD4AD9762D444 /* Pods-Liberalize-iOS_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Liberalize-iOS_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		745E5D809D2B48C0004F607582CB0051 /* CardInputVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CardInputVC.swift; sourceTree = "<group>"; };
+		769BA54534319DF2B89B926F70A12857 /* PaymentResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PaymentResponse.swift; sourceTree = "<group>"; };
+		7966FA25D15454866472AB262CE499B2 /* Pods-Liberalize-iOS_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Liberalize-iOS_Example.modulemap"; sourceTree = "<group>"; };
+		8131AE0FA6F773C6190E7A83C5272167 /* Pods-Liberalize-iOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Liberalize-iOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		8215A5D801C5730EEF573F9E85AF7E2D /* Liberalize-Frontend-iOS-SDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Liberalize-Frontend-iOS-SDK-dummy.m"; sourceTree = "<group>"; };
+		8DAB2714A0068FFD840685E3A383A66D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		8EE5699E57417A38E07C87D04B227279 /* Pods-Liberalize-iOS_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Liberalize-iOS_Example.release.xcconfig"; sourceTree = "<group>"; };
+		8FC273AC1EAC59D6FD791F62B15703F4 /* CardInputVM.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CardInputVM.swift; sourceTree = "<group>"; };
+		9279F22C5EFCFFE195E3E2900BF17603 /* Pods-Liberalize-iOS_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Liberalize-iOS_Tests-dummy.m"; sourceTree = "<group>"; };
+		93EB7F2920C67FA37E41BB10D80CAFB4 /* Liberalize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Liberalize.swift; path = "Liberalize-Frontend-iOS-SDK/Classes/Liberalize.swift"; sourceTree = "<group>"; };
+		99C7D1007218EDF8F813E23B487E7DC5 /* ViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DBA729B137E851A0C99DC49304CB372 /* PaymentMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PaymentMethod.swift; sourceTree = "<group>"; };
+		AA8477306A175E821CEFB341FD4C41D0 /* CardSecurityField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CardSecurityField.swift; sourceTree = "<group>"; };
+		AF68BC58F5C18616472CBF52D6EF3B2C /* Liberalize-Frontend-iOS-SDK */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Liberalize-Frontend-iOS-SDK"; path = Liberalize_Frontend_iOS_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF9EA0071B02F1F4CD27299E94CA74C7 /* Pods-Liberalize-iOS_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Liberalize-iOS_Example-dummy.m"; sourceTree = "<group>"; };
+		B083643E07A3695C35C65E610F700F85 /* QRCodeView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = QRCodeView.swift; sourceTree = "<group>"; };
+		B2803E8B09F0D43795AE38C3275DE2B1 /* Pods-Liberalize-iOS_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Liberalize-iOS_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		B94170367DE3815AB77149C2C1AFF956 /* Liberalize-Frontend-iOS-SDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = "Liberalize-Frontend-iOS-SDK.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BC99C50DF2C3D1210BDCE710F8E58592 /* Pods-Liberalize-iOS_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Liberalize-iOS_Tests"; path = Pods_Liberalize_iOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCCFFCA6735775DD9001F7E8A9B726A5 /* ExpirationDateField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExpirationDateField.swift; sourceTree = "<group>"; };
+		C3A9CBBAC02CDE9BCB676912F2712A30 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		CA23B78FBA8904F0A03F2C2A4D7ED1B5 /* Liberalize-Frontend-iOS-SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Liberalize-Frontend-iOS-SDK.debug.xcconfig"; sourceTree = "<group>"; };
+		CAD768A760BB8F449B5444066E9BAF9C /* Liberalize-Frontend-iOS-SDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Liberalize-Frontend-iOS-SDK.modulemap"; sourceTree = "<group>"; };
+		CE10564D6DF3643C93C1EA105DA72457 /* Liberalize-Frontend-iOS-SDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Liberalize-Frontend-iOS-SDK-Info.plist"; sourceTree = "<group>"; };
+		F1465EA40107652B6E0B367F7BAB35D0 /* UIColorExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		FCC55F03477AAFA1F4EE948F9ABA67A6 /* View.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0DB2F5A157552299817F78E23E769C54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				775BD848A61C40F03989205876A591D9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		408F26B894924EF8D8ADF2B95E545859 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C1566435A1474A80A0E100E53F4A892 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		522EC99DD839FEC0617150E8A863E34E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F36F8A4DC29AFB017F30A0D2BF92EDE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		005DA1EAF855C581BDDC286AEAD87250 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				68B02F3BE3BFCEBAEB250DBE17853F42 /* Constants.swift */,
+			);
+			name = Constant;
+			path = "Liberalize-Frontend-iOS-SDK/Classes/Constant";
+			sourceTree = "<group>";
+		};
+		1172D49A911F7A419480C85A2230D356 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				B94170367DE3815AB77149C2C1AFF956 /* Liberalize-Frontend-iOS-SDK.podspec */,
+				C3A9CBBAC02CDE9BCB676912F2712A30 /* LICENSE */,
+				8DAB2714A0068FFD840685E3A383A66D /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		1217491513A8B1C04C7C4EE835578901 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1157411795AA6DDBA20437418244B21B /* CardInputField.swift */,
+				AA8477306A175E821CEFB341FD4C41D0 /* CardSecurityField.swift */,
+				BCCFFCA6735775DD9001F7E8A9B726A5 /* ExpirationDateField.swift */,
+			);
+			name = Views;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		41651F6330656CF3A9559FE7AE0D0664 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF68BC58F5C18616472CBF52D6EF3B2C /* Liberalize-Frontend-iOS-SDK */,
+				438B17B27A7C29D8A4C06AE7A8B84FFB /* Pods-Liberalize-iOS_Example */,
+				BC99C50DF2C3D1210BDCE710F8E58592 /* Pods-Liberalize-iOS_Tests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		552292674DB369504DFCA7F8B5144BEA /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				3076B65BB89AD9184B522F501A10FE30 /* PayWithOCBCButton.swift */,
+				B083643E07A3695C35C65E610F700F85 /* QRCodeView.swift */,
+			);
+			name = QRCode;
+			path = QRCode;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		57F9420C924ECD06DF499047927D035C /* ApiService */ = {
+			isa = PBXGroup;
+			children = (
+				499A782F1C2AF980F35554DA520A8469 /* ApiProvider.swift */,
+				4D2BC054AAA2FA9057D6869B131711AE /* HTTPRequestProvider.swift */,
+			);
+			name = ApiService;
+			path = "Liberalize-Frontend-iOS-SDK/Classes/ApiService";
+			sourceTree = "<group>";
+		};
+		5BB087A5AA5F48B2CB113926C7A73FA4 /* Pods-Liberalize-iOS_Example */ = {
+			isa = PBXGroup;
+			children = (
+				7966FA25D15454866472AB262CE499B2 /* Pods-Liberalize-iOS_Example.modulemap */,
+				1ACD83F523ED29664044B5293C36D425 /* Pods-Liberalize-iOS_Example-acknowledgements.markdown */,
+				6B216591A51C662219DBD4AD9762D444 /* Pods-Liberalize-iOS_Example-acknowledgements.plist */,
+				AF9EA0071B02F1F4CD27299E94CA74C7 /* Pods-Liberalize-iOS_Example-dummy.m */,
+				4E0474201FB823AF045EB8DAC3242EDC /* Pods-Liberalize-iOS_Example-frameworks.sh */,
+				221B9237E5E576AFD31E90199D9A6F4B /* Pods-Liberalize-iOS_Example-Info.plist */,
+				3791AE4988C3F82DC63788E412825CB2 /* Pods-Liberalize-iOS_Example-umbrella.h */,
+				8131AE0FA6F773C6190E7A83C5272167 /* Pods-Liberalize-iOS_Example.debug.xcconfig */,
+				8EE5699E57417A38E07C87D04B227279 /* Pods-Liberalize-iOS_Example.release.xcconfig */,
+			);
+			name = "Pods-Liberalize-iOS_Example";
+			path = "Target Support Files/Pods-Liberalize-iOS_Example";
+			sourceTree = "<group>";
+		};
+		5DE5AB1AAE77E4EF45628D7E7C43955C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0B2DF7A13525ECE8C0A7C3211397A262 /* Card.swift */,
+				9DBA729B137E851A0C99DC49304CB372 /* PaymentMethod.swift */,
+				769BA54534319DF2B89B926F70A12857 /* PaymentResponse.swift */,
+			);
+			name = Model;
+			path = "Liberalize-Frontend-iOS-SDK/Classes/Model";
+			sourceTree = "<group>";
+		};
+		5FC6021903BACA33716BF90CCBE8C06F /* Liberalize-Frontend-iOS-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				93EB7F2920C67FA37E41BB10D80CAFB4 /* Liberalize.swift */,
+				57F9420C924ECD06DF499047927D035C /* ApiService */,
+				005DA1EAF855C581BDDC286AEAD87250 /* Constant */,
+				E81C90F0B9B058C773C32244C924D092 /* Manager */,
+				5DE5AB1AAE77E4EF45628D7E7C43955C /* Model */,
+				1172D49A911F7A419480C85A2230D356 /* Pod */,
+				6785CB3C4A4CA70B1D4B8E39139B1C86 /* Support Files */,
+				7D2237B986293DEE965C866410163793 /* UI */,
+				9640170B63C2DCCBB47BA26997EC0207 /* Utils */,
+			);
+			name = "Liberalize-Frontend-iOS-SDK";
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		62CAE8752417A562956F7C236CBC1F1B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5BB087A5AA5F48B2CB113926C7A73FA4 /* Pods-Liberalize-iOS_Example */,
+				E2B28417A70A48B46C7F46F385E2B1A9 /* Pods-Liberalize-iOS_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		6785CB3C4A4CA70B1D4B8E39139B1C86 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CAD768A760BB8F449B5444066E9BAF9C /* Liberalize-Frontend-iOS-SDK.modulemap */,
+				8215A5D801C5730EEF573F9E85AF7E2D /* Liberalize-Frontend-iOS-SDK-dummy.m */,
+				CE10564D6DF3643C93C1EA105DA72457 /* Liberalize-Frontend-iOS-SDK-Info.plist */,
+				59C490F02F62A7507DF5EBE701C7A1F6 /* Liberalize-Frontend-iOS-SDK-prefix.pch */,
+				516FDDF61DA79A9ED7EB20B7555E52A3 /* Liberalize-Frontend-iOS-SDK-umbrella.h */,
+				CA23B78FBA8904F0A03F2C2A4D7ED1B5 /* Liberalize-Frontend-iOS-SDK.debug.xcconfig */,
+				174188C60D07F30678E20C68479D237B /* Liberalize-Frontend-iOS-SDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Liberalize-Frontend-iOS-SDK";
+			sourceTree = "<group>";
+		};
+		7D2237B986293DEE965C866410163793 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C6929334AE71A6323A81B2ECFDB78B7A /* CardInput */,
+				7F31986C7982DB2AA3A9F0740F3D7AEB /* Common */,
+				552292674DB369504DFCA7F8B5144BEA /* QRCode */,
+			);
+			name = UI;
+			path = "Liberalize-Frontend-iOS-SDK/Classes/UI";
+			sourceTree = "<group>";
+		};
+		7F31986C7982DB2AA3A9F0740F3D7AEB /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FCC55F03477AAFA1F4EE948F9ABA67A6 /* View.swift */,
+				15EE58CE988F10DBCD6C3902DB853E42 /* ViewController.swift */,
+				99C7D1007218EDF8F813E23B487E7DC5 /* ViewModel.swift */,
+			);
+			name = Common;
+			path = Common;
+			sourceTree = "<group>";
+		};
+		9640170B63C2DCCBB47BA26997EC0207 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0F9BFC0AA6E20BEAF26E60D31B8B5F64 /* CardUtils.swift */,
+				5FB280AC01AE46D97B3F14C9E3468B48 /* CodableUtils.swift */,
+				653E00A5DCBE3D742BB7FA69CF2B26DF /* StringExtension.swift */,
+				F1465EA40107652B6E0B367F7BAB35D0 /* UIColorExtension.swift */,
+				567B5549C4AF538195C4AE98B5382835 /* UIImageViewExtension.swift */,
+				4EE7614AB91963FE2655C25CE122926F /* UITextFieldExtension.swift */,
+			);
+			name = Utils;
+			path = "Liberalize-Frontend-iOS-SDK/Classes/Utils";
+			sourceTree = "<group>";
+		};
+		9D812371287FE28506A3F869EC8A4EF3 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5FC6021903BACA33716BF90CCBE8C06F /* Liberalize-Frontend-iOS-SDK */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		C6929334AE71A6323A81B2ECFDB78B7A /* CardInput */ = {
+			isa = PBXGroup;
+			children = (
+				FEA6C35971A9B1F0DDCDEC2A3E46616F /* VCs */,
+				CDDFBFFBBD966BF586EDB21A42927607 /* ViewModels */,
+				1217491513A8B1C04C7C4EE835578901 /* Views */,
+			);
+			name = CardInput;
+			path = CardInput;
+			sourceTree = "<group>";
+		};
+		CDDFBFFBBD966BF586EDB21A42927607 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8FC273AC1EAC59D6FD791F62B15703F4 /* CardInputVM.swift */,
+			);
+			name = ViewModels;
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				9D812371287FE28506A3F869EC8A4EF3 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				41651F6330656CF3A9559FE7AE0D0664 /* Products */,
+				62CAE8752417A562956F7C236CBC1F1B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E2B28417A70A48B46C7F46F385E2B1A9 /* Pods-Liberalize-iOS_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				417AC79F3342FD4AE49713DB319AC480 /* Pods-Liberalize-iOS_Tests.modulemap */,
+				183B94108671E8427E4C9FCAAB9C459B /* Pods-Liberalize-iOS_Tests-acknowledgements.markdown */,
+				55DE74C61B797F289B8E8925E5F392C8 /* Pods-Liberalize-iOS_Tests-acknowledgements.plist */,
+				9279F22C5EFCFFE195E3E2900BF17603 /* Pods-Liberalize-iOS_Tests-dummy.m */,
+				2290F1CDFD275AA94FC1B4E78F65B5DB /* Pods-Liberalize-iOS_Tests-Info.plist */,
+				1254FAFD851337893F07DECB755AC1A8 /* Pods-Liberalize-iOS_Tests-umbrella.h */,
+				B2803E8B09F0D43795AE38C3275DE2B1 /* Pods-Liberalize-iOS_Tests.debug.xcconfig */,
+				13ECBD7478BA390391717E5CDDFA04C6 /* Pods-Liberalize-iOS_Tests.release.xcconfig */,
+			);
+			name = "Pods-Liberalize-iOS_Tests";
+			path = "Target Support Files/Pods-Liberalize-iOS_Tests";
+			sourceTree = "<group>";
+		};
+		E81C90F0B9B058C773C32244C924D092 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				3B15FED2375FF527762346004F16293A /* AuthManager.swift */,
+			);
+			name = Manager;
+			path = "Liberalize-Frontend-iOS-SDK/Classes/Manager";
+			sourceTree = "<group>";
+		};
+		FEA6C35971A9B1F0DDCDEC2A3E46616F /* VCs */ = {
+			isa = PBXGroup;
+			children = (
+				745E5D809D2B48C0004F607582CB0051 /* CardInputVC.swift */,
+			);
+			name = VCs;
+			path = VCs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6353B7A60FC34AB8FFBEC177088F59B6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D870B438F000491B6600A14F5E063EB /* Pods-Liberalize-iOS_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7B92E075F06E41E46C1420BB1DD51F4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44D4EB76F773978A8F32AA9D113C91D6 /* Pods-Liberalize-iOS_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C982AC9F0624D4959C0FAACDB11BAA85 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE2A9DE041FB5F41BBBA386111C7C8FC /* Liberalize-Frontend-iOS-SDK-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4AC2C737BB4A0E1297D9405AC893F5C5 /* Pods-Liberalize-iOS_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34B21FCEDA2D9D14792D6586218A0837 /* Build configuration list for PBXNativeTarget "Pods-Liberalize-iOS_Tests" */;
+			buildPhases = (
+				A7B92E075F06E41E46C1420BB1DD51F4 /* Headers */,
+				EB69EAF5A7162004D333EA0A608995CC /* Sources */,
+				408F26B894924EF8D8ADF2B95E545859 /* Frameworks */,
+				9F26C516CAF8A431A27559BB06ACE6DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0067CB1CD0FDCD46629511D0360DCADE /* PBXTargetDependency */,
+			);
+			name = "Pods-Liberalize-iOS_Tests";
+			productName = Pods_Liberalize_iOS_Tests;
+			productReference = BC99C50DF2C3D1210BDCE710F8E58592 /* Pods-Liberalize-iOS_Tests */;
+			productType = "com.apple.product-type.framework";
+		};
+		5C9D515D758016BDD951E9E746254CA2 /* Liberalize-Frontend-iOS-SDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE9BEB2587187B27B0D9415AAB20FE7A /* Build configuration list for PBXNativeTarget "Liberalize-Frontend-iOS-SDK" */;
+			buildPhases = (
+				C982AC9F0624D4959C0FAACDB11BAA85 /* Headers */,
+				4353C5A79CE5B14E4227E3406925B40F /* Sources */,
+				522EC99DD839FEC0617150E8A863E34E /* Frameworks */,
+				44EBECD505BCAB1E00517B4345828729 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Liberalize-Frontend-iOS-SDK";
+			productName = Liberalize_Frontend_iOS_SDK;
+			productReference = AF68BC58F5C18616472CBF52D6EF3B2C /* Liberalize-Frontend-iOS-SDK */;
+			productType = "com.apple.product-type.framework";
+		};
+		70A8F6A92782E3EEE33FF8ED3A0813C3 /* Pods-Liberalize-iOS_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 570596B29283516476B813150D38DCFF /* Build configuration list for PBXNativeTarget "Pods-Liberalize-iOS_Example" */;
+			buildPhases = (
+				6353B7A60FC34AB8FFBEC177088F59B6 /* Headers */,
+				72A94604EB418E8C5BFC4BF22D020BAC /* Sources */,
+				0DB2F5A157552299817F78E23E769C54 /* Frameworks */,
+				93A9F11FE484638816E448854068EBF0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				598E2E6AAC6A62B1EDEE850CE74B8742 /* PBXTargetDependency */,
+			);
+			name = "Pods-Liberalize-iOS_Example";
+			productName = Pods_Liberalize_iOS_Example;
+			productReference = 438B17B27A7C29D8A4C06AE7A8B84FFB /* Pods-Liberalize-iOS_Example */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 41651F6330656CF3A9559FE7AE0D0664 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5C9D515D758016BDD951E9E746254CA2 /* Liberalize-Frontend-iOS-SDK */,
+				70A8F6A92782E3EEE33FF8ED3A0813C3 /* Pods-Liberalize-iOS_Example */,
+				4AC2C737BB4A0E1297D9405AC893F5C5 /* Pods-Liberalize-iOS_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		44EBECD505BCAB1E00517B4345828729 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93A9F11FE484638816E448854068EBF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F26C516CAF8A431A27559BB06ACE6DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4353C5A79CE5B14E4227E3406925B40F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CD7C71C5F4705183F62D9350DC54FBD /* ApiProvider.swift in Sources */,
+				957D3CCCA877BAE5CC41565BA9DE958D /* AuthManager.swift in Sources */,
+				254C8A2CCA2AAFB68F7161A8A76F702E /* Card.swift in Sources */,
+				0D3133B167ABF2B391B014B0550A2C8F /* CardInputField.swift in Sources */,
+				FF9FC3C22028FF67FD8D0DF8423EFC73 /* CardInputVC.swift in Sources */,
+				8AC42664E7F77C82A36B0DF69C97F163 /* CardInputVM.swift in Sources */,
+				D9B4986EC9142DE0A78716FF5FC399C2 /* CardSecurityField.swift in Sources */,
+				F2D8DBBCDF94061EAD0DC492595D8545 /* CardUtils.swift in Sources */,
+				A77B4357893B15B96B6594F1EAC1D408 /* CodableUtils.swift in Sources */,
+				B1185AC7559E6404EE2745021A8D8A55 /* Constants.swift in Sources */,
+				696EA440ADA8FBD8B7102553D7433111 /* ExpirationDateField.swift in Sources */,
+				C4854C2C55749B43C10F67047B1A7F31 /* HTTPRequestProvider.swift in Sources */,
+				3AB4165495B121ED82613A68191F2F3A /* Liberalize.swift in Sources */,
+				3F4B8929CB6BDA2A7151432BF14C8A60 /* Liberalize-Frontend-iOS-SDK-dummy.m in Sources */,
+				746F49B220110158FA0E14E9D2CD3899 /* PaymentMethod.swift in Sources */,
+				051A34BD17542389BF00666C3DABF0EA /* PaymentResponse.swift in Sources */,
+				E6D54497F21C54795AD0E999D31B3362 /* PayWithOCBCButton.swift in Sources */,
+				C418249AEDAA7643A427FB30B338CE20 /* QRCodeView.swift in Sources */,
+				9CFA3E3B77A31CC3878AA2ED3F23B3F9 /* StringExtension.swift in Sources */,
+				5084D58AED59EB9F4F2EE7BCD6CAD7C5 /* UIColorExtension.swift in Sources */,
+				C00AE7D35AFA361E1F7BCAE4A7BBD173 /* UIImageViewExtension.swift in Sources */,
+				F463F8F3353DB037485A2F943FBF5E6F /* UITextFieldExtension.swift in Sources */,
+				1E6146344E93D3410D8311AC1DC332D4 /* View.swift in Sources */,
+				2C2EFBD4D08FD3F891853D7CE549C391 /* ViewController.swift in Sources */,
+				81218B4A314E9A296FED250829DDB899 /* ViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72A94604EB418E8C5BFC4BF22D020BAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47D447CFC1FAA03AF0D6BD25F0D6CF22 /* Pods-Liberalize-iOS_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB69EAF5A7162004D333EA0A608995CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7A650002AEBBE1055E1EE9F53DBD2F6 /* Pods-Liberalize-iOS_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0067CB1CD0FDCD46629511D0360DCADE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Liberalize-iOS_Example";
+			target = 70A8F6A92782E3EEE33FF8ED3A0813C3 /* Pods-Liberalize-iOS_Example */;
+			targetProxy = F9045CC8012E26B835E1F6C9BC0E8C11 /* PBXContainerItemProxy */;
+		};
+		598E2E6AAC6A62B1EDEE850CE74B8742 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Liberalize-Frontend-iOS-SDK";
+			target = 5C9D515D758016BDD951E9E746254CA2 /* Liberalize-Frontend-iOS-SDK */;
+			targetProxy = D599500FAACFD836CAD514BD48151382 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1258BA542FD221F741D1608A037C26EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13ECBD7478BA390391717E5CDDFA04C6 /* Pods-Liberalize-iOS_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Liberalize-iOS_Tests/Pods-Liberalize-iOS_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Liberalize-iOS_Tests/Pods-Liberalize-iOS_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2600AEE58C70AF9A74B555E41D079611 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EE5699E57417A38E07C87D04B227279 /* Pods-Liberalize-iOS_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Liberalize-iOS_Example/Pods-Liberalize-iOS_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Liberalize-iOS_Example/Pods-Liberalize-iOS_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		29B263A22818731D3BDBEB817CE83EBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8131AE0FA6F773C6190E7A83C5272167 /* Pods-Liberalize-iOS_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Liberalize-iOS_Example/Pods-Liberalize-iOS_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Liberalize-iOS_Example/Pods-Liberalize-iOS_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2B9E26EAE2CD392AD762421F663075A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		859B6AAAB7970E2930C89CA358CBE978 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2803E8B09F0D43795AE38C3275DE2B1 /* Pods-Liberalize-iOS_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Liberalize-iOS_Tests/Pods-Liberalize-iOS_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Liberalize-iOS_Tests/Pods-Liberalize-iOS_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A68820343B701F5E26F5E8C545B08F40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA23B78FBA8904F0A03F2C2A4D7ED1B5 /* Liberalize-Frontend-iOS-SDK.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Liberalize-Frontend-iOS-SDK/Liberalize-Frontend-iOS-SDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Liberalize-Frontend-iOS-SDK/Liberalize-Frontend-iOS-SDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Liberalize-Frontend-iOS-SDK/Liberalize-Frontend-iOS-SDK.modulemap";
+				PRODUCT_MODULE_NAME = Liberalize_Frontend_iOS_SDK;
+				PRODUCT_NAME = Liberalize_Frontend_iOS_SDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F00C708F5833ACFAA625D1DFCEF105C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 174188C60D07F30678E20C68479D237B /* Liberalize-Frontend-iOS-SDK.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Liberalize-Frontend-iOS-SDK/Liberalize-Frontend-iOS-SDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Liberalize-Frontend-iOS-SDK/Liberalize-Frontend-iOS-SDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Liberalize-Frontend-iOS-SDK/Liberalize-Frontend-iOS-SDK.modulemap";
+				PRODUCT_MODULE_NAME = Liberalize_Frontend_iOS_SDK;
+				PRODUCT_NAME = Liberalize_Frontend_iOS_SDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		34B21FCEDA2D9D14792D6586218A0837 /* Build configuration list for PBXNativeTarget "Pods-Liberalize-iOS_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				859B6AAAB7970E2930C89CA358CBE978 /* Debug */,
+				1258BA542FD221F741D1608A037C26EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B9E26EAE2CD392AD762421F663075A1 /* Debug */,
+				63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		570596B29283516476B813150D38DCFF /* Build configuration list for PBXNativeTarget "Pods-Liberalize-iOS_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29B263A22818731D3BDBEB817CE83EBF /* Debug */,
+				2600AEE58C70AF9A74B555E41D079611 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE9BEB2587187B27B0D9415AAB20FE7A /* Build configuration list for PBXNativeTarget "Liberalize-Frontend-iOS-SDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A68820343B701F5E26F5E8C545B08F40 /* Debug */,
+				F00C708F5833ACFAA625D1DFCEF105C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

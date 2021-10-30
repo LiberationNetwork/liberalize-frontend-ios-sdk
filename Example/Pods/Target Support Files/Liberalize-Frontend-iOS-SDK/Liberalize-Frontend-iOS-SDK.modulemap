@@ -1,0 +1,6 @@
+framework module Liberalize_Frontend_iOS_SDK {
+  umbrella header "Liberalize-Frontend-iOS-SDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

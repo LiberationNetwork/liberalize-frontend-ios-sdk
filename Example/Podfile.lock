@@ -1,0 +1,16 @@
+PODS:
+  - Liberalize-Frontend-iOS-SDK (0.0.1)
+
+DEPENDENCIES:
+  - Liberalize-Frontend-iOS-SDK (from `../`)
+
+EXTERNAL SOURCES:
+  Liberalize-Frontend-iOS-SDK:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Liberalize-Frontend-iOS-SDK: f30cb36fedf25066af038f01c7ceeff889154ed7
+
+PODFILE CHECKSUM: 286e1a7d1ed19d6c2d5d25d7d91751b5d9706d6e
+
+COCOAPODS: 1.11.2
