@@ -19,7 +19,7 @@ class CardInputVC: ViewController {
     }()
     
     private lazy var confirmButton: UIBarButtonItem = {
-        let button = UIBarButtonItem(title: "Submit", style: .plain, target: self, action: #selector(addCard))
+        let button = UIBarButtonItem(title: "Pay", style: .plain, target: self, action: #selector(addCard))
         button.isEnabled = false
         return button
     }()
